@@ -132,9 +132,9 @@ class Cards extends AbstractApi
      * @param int $expYear
      * @return CreateCardRequest
      */
-    public function createCardRequest($number, $expMonth, $expYear)
+    public function createCardRequest($number, $expMonth, $expYear, $cvv = null)
     {
-        return new CreateCardRequest($number, $expMonth, $expYear);
+        return new CreateCardRequest($number, $expMonth, $expYear, $cvv);
     }
 
     /**
